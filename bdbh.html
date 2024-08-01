@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINDAM RANDOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'RebeltonItalic';
+            src: url('fonts/REBELTONITALIC-Regular.ttf') format('truetype');
+        }
+
+        .homes {
+            height: 2500px;
+            background: linear-gradient(to top, #3a4153, #7e859c);
+        }
+        .container-bdbh {
+            position: relative;
+            width: '100';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: #202533;
+            overflow: hidden;
+        }
+        .container-bdbh .overlay {
+            position: absolute; 
+            display: flex;
+            margin-right: 790px;
+            margin-top: 55px;
+        }
+
+        .welcome {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-top: 30px;
+        }
+        .gradient-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 490px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); 
+        }
+
+        .overlay h3 {
+            font-family: 'RebeltonItalic';
+            font-size: 10px;
+            padding-top: 210px;
+            padding-left: 90px;
+            color: #ffffff;
+        }  
+
+        footer {
+            background-color: #202533;
+            padding-top: 40px;
+            border-top: 2px solid gray;
+        }
+        .title-deskripsi {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'RebeltonItalic', sans-serif;
+        }
+        .title-deskripsi2 {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'RebeltonItalic', sans-serif;
+        }
+
+        .para {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Bebas Neue';
+            color: #7e859c;
+            font-size: 20px;
+            box-shadow: #202533;
+            padding-top: 55px;
+        }
+        .gambar {
+            padding-top: 105px;
+        }
+        .slider {
+            display: flex;
+            width: 1440px;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slider img {
+            padding-top: 105px;
+            padding-left: 15px;
+            width: 1422px;
+            height: 473px;
+        }
+
+        @keyframes slide {
+            0% {transform: translateX(0%);}
+            33% {transform: translateX(-100%);}
+            66% {transform: translateX(-200%);}
+            100% {transform: translateX(0%);}
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px; 
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slider2 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider2 img {
+            width: 700px;
+            height: 700px;
+            flex-shrink: 0;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            border: none;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+        audio {
+            width: 1px; 
+            height: 1px; 
+        }
+    </style>
+    <div class="homes">
+        <nav>
+            <h2 class="logo"> <a href="index.html"><img src="images/logo.png" width="50"> MINDAM RANDOM</a></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bdbh.html">BDBH</a></li>
+                <li><a href="link.html">Links Stream</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container-bdbh">
+            <div class="slider">
+                <img src="images/headermerch2.jpg" width="1440" alt="Gambar 2" class="slide">
+                <img src="images/headermerch1.png" width="1440" alt="Gambar 1" class="slide">
+                <img src="images/headermerch3.png" width="1440" alt="Gambar 3" class="slide">
+            </div>
+        </div>
+        <div class="welcome">
+            <img src="images/merch.png" width="300px" alt="">
+        </div>
+        <div class="title-deskripsi">
+            <h3>BDBH proudly present BDBH Merch Vol.1!</h3>
+        </div>
+        <div class="para">
+            <img src="images/merch1.jpg" width="650px" alt="">
+            <img src="images/merch2.png" width="650px" alt="">
+        </div>
+
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <div class="slider2">
+                <img src="images/T-ShirtOnly.png" alt="">
+                <img src="images/Bundling1.png" alt="">
+                <img src="images/Bundling2.png" alt="">
+                <img src="images/Bundling3.png" alt="">
+                <img src="images/Bundling4.png" alt="">
+                <img src="images/SizeChart.png" alt="">
+                <img src="images/Upsize.png" alt="">
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="title-deskripsi2">
+            <h3>For More Information, Click Link Below <br> <a href="https://bit.ly/BDBHMerchOrder" class="link-sound">BDBHMerchOrder</a></h3>
+        </div>
+        <audio id="hover-sound" controls autoplay>
+            <source src="sound/beli.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <footer class="copy">
+        <p>Copyright © 2024 Mindam Random (PT. Mencari Cinta Sejati) All Rights Reserved </p>
+        <br/> 
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function showNextImage() {
+            const slider = document.querySelector('.slider');
+            const totalImages = document.querySelectorAll('.slider img').length;
+            currentIndex = (currentIndex + 1) % totalImages;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextImage, 3000); 
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const slider2 = document.querySelector('.slider2');
+        const images = document.querySelectorAll('.slider2 img');
+        let index = 0;
+
+        function updateSlider() {
+            const offset = -index * 100; 
+            slider2.style.transform = `translateX(${offset}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            updateSlider();
+        });
+
+        prevButton.addEventListener('click', () => {
+            index = (index - 1 + images.length) % images.length;
+            updateSlider();
+        });
+
+       
+        updateSlider();
+
+        const linkSound = document.querySelector('.link-sound');
+        const hoverSound = document.getElementById('hover-sound');
+
+        linkSound.addEventListener('mouseover', () => {
+            hoverSound.play();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @font-face {
+    font-family: 'Akhbar Bold';
+    src: url('fonts/akhbar-mt-bold.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    background-color: #444857;
+    
+    
+}
+.home {
+    height: 106%;
+    width: 100%;
+    
+    background-color: #444857;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color: #202533;
+    border-bottom: 2px solid gray;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    width: 90%;
+    z-index: 9999;
+}
+.logo {
+    color: #7e859c;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 45px;
+    text-decoration: none;
+}    
+.logo a {
+    font-family: 'Akhbar Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+.stefanus {
+        color: white;
+        margin-top: 20px;
+
+      }
+nav ul{
+    margin-right: 80px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize; 
+    font-size: 25px;
+}
+nav ul li a:hover {
+    color: #7e859c;
+    transition: 0.5s;
+}
+.btn {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: transform .5s;
+}
+.btn:hover {
+    transform: scale(1.2);
+    border: 2px solid red;
+    background-color: transparent;
+}
+.container{
+    
+    position: relative;
+    width: '100';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #202533;
+    overflow: hidden;
+
+}
+
+.contact {
+    color: #7e859c;
+    text-align: center;
+    font-size: 60px;
+    align-items: center;
+}
+nav h2 a{
+    text-decoration: none;
+    color: #7e859c;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color: #adaeaf;
+}
+footer {
+    border-top: 2px solid gray;
+}
